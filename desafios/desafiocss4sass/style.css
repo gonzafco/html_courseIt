@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  background: linear-gradient(45deg, #753267 0%, #ebebeb 100%);
+  max-width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .login .login-left {
+  max-width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  padding: 40px 40px;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper .login .login-left {
+    max-width: 100%;
+  }
+}
+
+.wrapper .login .login-left .logo {
+  text-decoration: none;
+  color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.wrapper .login .login-left .logo .logo-img {
+  margin-right: 5px;
+}
+
+.wrapper .login .login-left .logo .logo-text {
+  font-weight: bold;
+}
+
+.wrapper .login .login-left .login-title {
+  color: #5f5f5f;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.wrapper .login .login-left .buttons-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -7.5px;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper .login .login-left .buttons-social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.wrapper .login .login-left .buttons-social .button-social {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(50% - 15px);
+          flex: 1 0 calc(50% - 15px);
+  border-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  padding: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 7.5px;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper .login .login-left .buttons-social .button-social {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.wrapper .login .login-left .buttons-social .button-social.facebook {
+  background-color: #425e9e;
+}
+
+.wrapper .login .login-left .buttons-social .button-social.facebook:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.wrapper .login .login-left .buttons-social .button-social.xing {
+  background-color: #245553;
+}
+
+.wrapper .login .login-left .buttons-social .button-social .button-text {
+  font-size: 1rem;
+}
+
+.wrapper .login .login-left .buttons-social .button-social .button-icon {
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.wrapper .login .separator-or {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
+  color: #454545;
+}
+
+.wrapper .login .form-login .label,
+.wrapper .login .form-login .input {
+  display: block;
+  width: 100%;
+}
+
+.wrapper .login .form-login .input-login-form {
+  margin: 5px 0px;
+}
+
+.wrapper .login .form-login .label {
+  padding: 10px 0px;
+  font-size: 1rem;
+  color: #a1a1a1;
+}
+
+.wrapper .login .form-login .input {
+  border: 0;
+  border-bottom: 0.5px solid;
+  font-size: 1.1rem;
+}
+
+.wrapper .login .login-extensions {
+  padding: 30px 0 40px;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*.remember-label + .remember-checkbox[type="checkbox"] {
+                color: #ccc;
+                font-style: italic;
+            }
+            label + input[type="checkbox"]:checked + {
+                color: #f00;
+                font-style: normal;
+            }*/
+}
+
+@media screen and (max-width: 350px) {
+  .wrapper .login .login-extensions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.wrapper .login .login-extensions .remember-checkbox {
+  vertical-align: middle;
+}
+
+.wrapper .login .login-extensions .forgot-password {
+  text-decoration: none;
+}
+
+.wrapper .login .login-extensions .forgot-password:hover {
+  color: #7a007a;
+  font-weight: bold;
+}
+
+.wrapper .login .terms-conditions {
+  color: #5f5f5f;
+  font-size: 0.9rem;
+  display: block;
+}
+
+.wrapper .login .terms-conditions .link {
+  text-decoration: none;
+}
+
+.wrapper .login-right {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  background-image: url("https://images.unsplash.com/photo-1578678346424-41f8dcc13ea9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80");
+  background-size: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper .login-right {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

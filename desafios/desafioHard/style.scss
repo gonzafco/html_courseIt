@@ -1,0 +1,153 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;800&display=swap");
+@import url("//db.onlinewebfonts.com/c/0abeb2471faeb5269db428b9eac2075e?family=GT+Walsheim+Pro+Regular");
+
+@font-face {
+    font-family: "GT Walsheim Pro Regular";
+    src: url("//db.onlinewebfonts.com/t/0abeb2471faeb5269db428b9eac2075e.eot");
+    src: url("//db.onlinewebfonts.com/t/0abeb2471faeb5269db428b9eac2075e.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/0abeb2471faeb5269db428b9eac2075e.woff2") format("woff2"),
+        url("//db.onlinewebfonts.com/t/0abeb2471faeb5269db428b9eac2075e.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/0abeb2471faeb5269db428b9eac2075e.ttf") format("truetype"),
+        url("//db.onlinewebfonts.com/t/0abeb2471faeb5269db428b9eac2075e.svg#GT Walsheim Pro Regular") format("svg");
+}
+
+* {
+    font-family: "GT Walsheim Pro Regular";
+    box-sizing: border-box;
+}
+
+.main-container {
+    background-color:grey;
+    .main-wrapper {
+        width: 50vw;
+        margin: 0 auto;
+        .header-wrapper {
+            &.background {
+                background-image: url("https://images.unsplash.com/photo-1532387921653-954ceb4cceac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80");
+                background-size: cover;
+                background-position: top;
+            }
+
+            .header-navbar {
+                font-size: 3rem;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 40px;
+
+                .fab .brand {
+                    font-family: "GT Walsheim Pro Regular";
+                    padding: 0px 20px;
+                }
+
+                .button-login {
+                    font-size: 1.2rem;
+                    border-radius: 4px;
+                    border: 2px solid white;
+                    padding: 10px;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            .header-title {
+                font-weight: 800;
+                font-size: 2rem;
+                color: #ffffff;
+                text-align: center;
+            }
+            .header-subtitle {
+                font-weight: 500;
+                font-size: 1.1rem;
+                color: #bfbfbf;
+                text-align: center;
+                padding: 20px 0px 5px;
+            }
+            .form-wrapper {
+                padding: 20px 60px;
+
+                .form-header {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .input-form {
+                        border-radius: 5px;
+                        border: none;
+                        padding: 20px 20px;
+                        margin: 5px 5px;
+                        font-size: 1rem;
+
+                        flex-basis: calc(50% - 10px);
+
+                        &:nth-child(5) {
+                            flex-basis: calc(100% - 10px);
+                        }
+
+                        &::placeholder {
+                            color: grey;
+                        }
+
+                        &.select {
+                            color: grey;
+                        }
+                    }
+                    .submit {
+                        flex-basis: calc(100% - 10px);
+                        border: 1px solid #46adf5;
+                        border-radius: 5px;
+                        background-color: #46adf5;
+                        color: white;
+                        padding: 20px 20px;
+                        margin: 5px 5px;
+                        font-size: 1rem;
+
+                        &:hover {
+                            background-color: white;
+                            border: 1px solid #46adf5;
+                            color: #46adf5;
+                        }
+                    }
+                }
+            }
+
+            .header-subscription {
+                text-align: center;
+                color: white;
+                font-size: 0.9rem;
+                padding: 10px 0px 100px 0px;
+            }
+        }
+
+        .section-wrapper {
+            display: flex;
+            padding: 20px;
+            background-color: honeydew;
+
+            .section {
+                display: flex;
+                flex-direction: column;
+
+                &.right {
+                    flex-basis: calc(50%);
+                }
+                &.left {
+                    flex-basis: calc(50%);
+                }
+
+                .info-wrapper {
+                    padding: 10px;
+
+                    .title {
+                        font-weight: bold;
+                        padding-bottom: 10px;
+                    }
+
+                    .text {
+                        line-height: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

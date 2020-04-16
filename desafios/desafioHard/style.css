@@ -1,0 +1,187 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;800&display=swap");
+@import url("//db.onlinewebfonts.com/c/0abeb2471faeb5269db428b9eac2075e?family=GT+Walsheim+Pro+Regular");
+@font-face {
+  font-family: "GT Walsheim Pro Regular";
+  src: url("//db.onlinewebfonts.com/t/0abeb2471faeb5269db428b9eac2075e.eot");
+  src: url("//db.onlinewebfonts.com/t/0abeb2471faeb5269db428b9eac2075e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0abeb2471faeb5269db428b9eac2075e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0abeb2471faeb5269db428b9eac2075e.woff") format("woff"), url("//db.onlinewebfonts.com/t/0abeb2471faeb5269db428b9eac2075e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0abeb2471faeb5269db428b9eac2075e.svg#GT Walsheim Pro Regular") format("svg");
+}
+
+* {
+  font-family: "GT Walsheim Pro Regular";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-container {
+  background-color: grey;
+}
+
+.main-container .main-wrapper {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.main-container .main-wrapper .header-wrapper.background {
+  background-image: url("https://images.unsplash.com/photo-1532387921653-954ceb4cceac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80");
+  background-size: cover;
+  background-position: top;
+}
+
+.main-container .main-wrapper .header-wrapper .header-navbar {
+  font-size: 3rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+}
+
+.main-container .main-wrapper .header-wrapper .header-navbar .fab .brand {
+  font-family: "GT Walsheim Pro Regular";
+  padding: 0px 20px;
+}
+
+.main-container .main-wrapper .header-wrapper .header-navbar .button-login {
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: 2px solid white;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.main-container .main-wrapper .header-wrapper .header-title {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.main-container .main-wrapper .header-wrapper .header-subtitle {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #bfbfbf;
+  text-align: center;
+  padding: 20px 0px 5px;
+}
+
+.main-container .main-wrapper .header-wrapper .form-wrapper {
+  padding: 20px 60px;
+}
+
+.main-container .main-wrapper .header-wrapper .form-wrapper .form-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-container .main-wrapper .header-wrapper .form-wrapper .form-header .input-form {
+  border-radius: 5px;
+  border: none;
+  padding: 20px 20px;
+  margin: 5px 5px;
+  font-size: 1rem;
+  -ms-flex-preferred-size: calc(50% - 10px);
+      flex-basis: calc(50% - 10px);
+}
+
+.main-container .main-wrapper .header-wrapper .form-wrapper .form-header .input-form:nth-child(5) {
+  -ms-flex-preferred-size: calc(100% - 10px);
+      flex-basis: calc(100% - 10px);
+}
+
+.main-container .main-wrapper .header-wrapper .form-wrapper .form-header .input-form::-webkit-input-placeholder {
+  color: grey;
+}
+
+.main-container .main-wrapper .header-wrapper .form-wrapper .form-header .input-form:-ms-input-placeholder {
+  color: grey;
+}
+
+.main-container .main-wrapper .header-wrapper .form-wrapper .form-header .input-form::-ms-input-placeholder {
+  color: grey;
+}
+
+.main-container .main-wrapper .header-wrapper .form-wrapper .form-header .input-form::placeholder {
+  color: grey;
+}
+
+.main-container .main-wrapper .header-wrapper .form-wrapper .form-header .input-form.select {
+  color: grey;
+}
+
+.main-container .main-wrapper .header-wrapper .form-wrapper .form-header .submit {
+  -ms-flex-preferred-size: calc(100% - 10px);
+      flex-basis: calc(100% - 10px);
+  border: 1px solid #46adf5;
+  border-radius: 5px;
+  background-color: #46adf5;
+  color: white;
+  padding: 20px 20px;
+  margin: 5px 5px;
+  font-size: 1rem;
+}
+
+.main-container .main-wrapper .header-wrapper .form-wrapper .form-header .submit:hover {
+  background-color: white;
+  border: 1px solid #46adf5;
+  color: #46adf5;
+}
+
+.main-container .main-wrapper .header-wrapper .header-subscription {
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  padding: 10px 0px 100px 0px;
+}
+
+.main-container .main-wrapper .section-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  background-color: honeydew;
+}
+
+.main-container .main-wrapper .section-wrapper .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .main-wrapper .section-wrapper .section.right {
+  -ms-flex-preferred-size: calc(50%);
+      flex-basis: calc(50%);
+}
+
+.main-container .main-wrapper .section-wrapper .section.left {
+  -ms-flex-preferred-size: calc(50%);
+      flex-basis: calc(50%);
+}
+
+.main-container .main-wrapper .section-wrapper .section .info-wrapper {
+  padding: 10px;
+}
+
+.main-container .main-wrapper .section-wrapper .section .info-wrapper .title {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.main-container .main-wrapper .section-wrapper .section .info-wrapper .text {
+  line-height: 1.2rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,67 @@
+.box {
+    display: flex;
+    align-items: stretch;
+  }
+
+.post-separator{
+    font-family: sans-serif;
+    font-size: 13px;
+    color:#aaaaaa;
+}
+
+.post-profile {
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+  }
+
+.hr-post{
+    border: 1px solid #aaaaaa;
+}
+.post {
+    margin: auto;
+    max-width: 60%;
+}
+
+.post-title {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+.post-subtitle {
+    font-family: sans-serif;
+    color:#999999;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.post-paragraph{
+    font-family: Georgia, Cambria, serif;
+}
+
+.post-tags {
+    border: none;
+    font-family: serif;
+    display: inline-block;
+    height: 2rem;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+}
+
+.post-tags {
+    color:white;
+}
+
+.post-tags .css {    
+    background-color: darkturquoise;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+.post-tags .pure {    
+    background-color: red;
+    padding-right: 1em;
+    padding-left: 1em;
+}

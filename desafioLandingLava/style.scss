@@ -1,0 +1,302 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;600;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+.wrapper-content {
+    background-color: black;
+    min-width: 100%;
+    .header-wrapper {
+        min-height: 50vh;
+        min-height: 100vh;
+        margin: 0 auto;
+        &.bg-img {
+            background-image: linear-gradient(rgba(#000000, 1), rgba(#000000, 0)),
+                url("https://imagenes.diario16.com/wp-content/uploads/2018/03/Art%C3%ADculo-40.-Imagen.jpg");
+
+            background-position: center;
+            background-size: cover;
+            height: 100px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+
+            .nav-logo {
+                font-family: "Playfair Display", serif;
+                color: black;
+                font-size: 3rem;
+
+                
+                @media (max-width: 500px) {
+                    display: none;
+                }
+            }
+            .nav-items {
+                font-size: 1rem;
+                color: white;
+                letter-spacing: 0.3rem;
+                font-weight: 600;
+                font-family: "Montserrat", sans-serif;
+
+                ul {
+                    li {
+                        display: inline;
+                        padding: 10px;
+
+                        &.nav-btn {
+                            border: 1px solid white;
+                        }
+                    }
+                }
+
+                
+                @media (max-width: 500px) {
+                    display: none;
+                }
+            }
+        }
+
+        .central-info {
+            padding: 100px 100px;
+
+            .title {
+                font-size: 5rem;
+                padding: 20px 0px;
+                color: white;
+                font-weight: 600;
+                font-family: "Playfair Display", serif;
+            }
+
+            .subtitle {
+                font-family: "Montserrat", sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                letter-spacing: 0.3rem;
+                color: #66b5af;
+            }
+
+            .hr-central {
+                border: 1px solid white;
+            }
+        }
+
+        .botton-info {
+            margin: 0 auto;
+            padding: 100px 0px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .title {
+                font-size: 2rem;
+                font-family: "Playfair Display", serif;
+                padding: 10px;
+                color: white;
+            }
+            .subtitle {
+                font-size: 1rem;
+                color: grey;
+                font-family: "Montserrat", sans-serif;
+            }
+            .hr-blog {
+                border: 1px solid white;
+            }
+            .text {
+                width: 400px;
+                padding: 20px;
+                font-size: 0.9rem;
+                line-height: 1.2rem;
+                text-align: justify;
+                color: grey;
+                font-family: "Montserrat", sans-serif;
+            }
+        }
+    }
+
+    .latest-articles {
+        max-width: 100vw;
+        min-height: 100vh;
+        background-color: #393939;
+
+        @media (max-width: 800px) {
+            padding-bottom: 40px;
+        }
+
+        .top-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 100px 0px;
+
+            .title {
+                font-size: 2rem;
+                font-family: "Playfair Display", serif;
+                color: white;
+            }
+            .subtitle {
+                padding: 10px 0px 10px 0px;
+                font-size: 1rem;
+                color: grey;
+                font-family: "Montserrat", sans-serif;
+            }
+            .hr-blog {
+                border: 1px solid white;
+            }
+        }
+
+        .articles-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px 30px;
+
+            justify-content: center;
+
+            .article-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                flex-shrink: 1;
+                flex-grow: 1;
+                max-width: 400px;
+                margin: 10px 10px;
+                box-shadow: 0px 13px 8px 0px rgba(0, 0, 0, 0.82);
+                height: 500px;
+                padding-bottom: 30px;
+
+                @media (max-width: 800px) {
+                    flex-basis: 100%;
+                }
+
+                .img-title {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    color: white;
+                }
+                .img-subtitle {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 0.6rem;
+                    color: white;
+                }
+                &.a1 {
+                    background-image: url("https://images.unsplash.com/photo-1469135762633-c299d101636a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80");
+                    background-size: cover;
+                    background-position: top;
+                }
+                &.a2 {
+                    background-image: url("https://images.unsplash.com/photo-1573144693925-249c8159d330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=643&q=80");
+                    background-size: cover;
+                    background-position: top;
+                }
+                &.a3 {
+                    background-image: url("https://images.unsplash.com/photo-1558854327-f3aa521273a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1371&q=80");
+                    background-size: cover;
+                    background-position: top;
+                }
+            }
+        }
+    }
+
+    .subscribe-container {
+        height: 50vh;
+        background-color: #2e2e2e;
+        padding: 100px;
+
+        .subscribe-info {
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            .title {
+                font-size: 3rem;
+                font-weight: 600;
+                font-family: "Playfair Display", serif;
+                color: white;
+            }
+            .sign-up {
+                padding: 10px 0px 10px 0px;
+                font-size: 1rem;
+                color: grey;
+                font-family: "Montserrat", sans-serif;
+            }
+            .input-text {
+                background-color: #393939;
+                width: 33%;
+                padding: 20px;
+                font-size: 1rem;
+                border: 1px solid #5a5a5a;
+                color: grey;
+                margin: 40px;
+
+                @media (max-width: 800px) {
+                    width: 80%;
+                }
+            }
+            .input-submit {
+                background-color: transparent;
+                padding: 10px 20px;
+                color: white;
+                font-family: "Montserrat", sans-serif;
+
+                @media (max-width: 800px) {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .footer-container {
+        background-color: #393939;
+
+        padding: 30px 30px;
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media (max-width: 500px) {
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .footer-logo {
+                font-family: "Playfair Display", serif;
+                color: white;
+                font-size: 3rem;
+
+                @media (max-width: 500px) {
+                    display: none;
+                }
+            }
+            .footer-items {
+                font-size: 1rem;
+                color: white;
+                letter-spacing: 0.3rem;
+                font-weight: 400;
+                font-family: "Montserrat", sans-serif;
+
+                ul {
+                    li {
+                        display: inline;
+                        @media (max-width: 500px) {
+                            display: block;
+                            text-align: center;
+                            padding: 10px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

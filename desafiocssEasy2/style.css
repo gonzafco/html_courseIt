@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #f2f2f2;
+  width: 100vw;
+}
+
+.wrapper .header-background {
+  background-color: #539be2;
+  width: 100vw;
+  height: 40vh;
+}
+
+.wrapper .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: -20vh auto;
+  width: 50vw;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.wrapper .main-container .main-title {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  color: #000000;
+  text-align: center;
+  padding: 40px 30px;
+}
+
+.wrapper .main-container .main-text {
+  color: #5a5858;
+  font-size: 18px;
+  line-height: 1.5rem;
+  padding: 0px 30px 30px;
+  font-weight: 500;
+}
+
+.wrapper .main-container .main-img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.wrapper .main-container .paragraph-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 30px 40px 30px;
+}
+
+.wrapper .main-container .paragraph-container .main-paragraph-title {
+  color: #000000;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.wrapper .main-container .paragraph-container .main-paragraph {
+  color: #5a5858;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.wrapper .main-container .paragraph-container .main-paragraph-link {
+  text-decoration: underline;
+  color: #539be2;
+  margin-top: 30px;
+}
+
+.wrapper .main-container .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #000000;
+}
+
+.wrapper .main-container .main-footer .main-footer-title {
+  font-size: 1.5rem;
+  text-align: left;
+  color: #ffffff;
+  padding: 25px 30px;
+}
+
+.wrapper .main-container .main-footer .main-footer-text {
+  color: #b2b2b2;
+  font-size: 18px;
+  line-height: 1.5rem;
+  padding: 0px 30px;
+  font-weight: 500;
+}
+
+.wrapper .main-container .main-footer .main-footer-text .saving {
+  font-weight: bold;
+  color: #f7f7f7;
+}
+
+.wrapper .main-container .main-footer .main-footer-link {
+  color: #ff7070;
+  padding: 20px 30px;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.wrapper .section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 25vh auto 0 auto;
+  width: 50vw;
+  background-color: #b3e5fc;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 30px 30px;
+}
+
+.wrapper .section-container .section-container-title {
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.wrapper .section-container .section-container-link {
+  color: #599fe4;
+  font-size: 1.1rem;
+}
+
+.wrapper .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5vh auto 0 auto;
+  width: 50vw;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0px 30px;
+}
+
+.wrapper .footer-container .link-inline {
+  display: inline;
+  padding-bottom: 10px;
+}
+
+.wrapper .footer-container .link-decoration {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.wrapper .footer-container .footer-container-text {
+  font-size: 0.9rem;
+  padding: 15px 0px;
+}
+/*# sourceMappingURL=style.css.map */

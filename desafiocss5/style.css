@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai+2:400,700&display=swap');
+
+* {
+    box-sizing: border-box
+}
+
+
+
+.main{
+    background-color: white;    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border-radius: 10px;
+    border: 0    solid transparent;
+    width: 40vw;
+    flex-direction: row;
+    display: flex;
+    box-shadow:  -20px 20px 60px #d9d9d9, 20px -20px 60px #ffffff;   
+    overflow: hidden;
+}
+
+.container-left{
+    padding:5% 5% 5% 5%;
+    width: 60%;
+    font-family: 'Baloo Bhai 2', cursive;    
+    color:gray;
+    flex-grow:1;
+}
+
+.container-right{
+    width: 40%;
+    background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');    
+    background-position: initial;
+    background-size: cover;
+}
+
+.container-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.container-text{
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: 2rem;
+    margin-top:2rem;
+    padding-right: 1rem;
+}
+.read-continue{
+    color:#00d8e7;
+    font-size: 1rem;
+
+}
+
+.read-continue:hover{
+    color:rgb(34, 96, 134);
+}
